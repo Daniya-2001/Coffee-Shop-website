@@ -1,0 +1,285 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro-shop-title{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(image/intro-bg.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: 100px 100px;
+}
+
+.intro-des{
+    height: 450px;
+    width: 500px;
+    border-radius: 15px;
+    background-color: rgba(51, 47, 41, 0.8);
+}
+
+.intro-des h1{
+    font-size: 60px;
+}
+
+.intro-des p{
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 768px){
+    .intro-shop-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .intro-des{
+        height: 300px;
+        width: 350px;
+    }
+
+    .intro-des h1{
+        font-size: 30px;
+    }
+    
+    .intro-des p{
+        font-size: 10px;
+    }
+}
+
+
+
+/* coffee and cake */
+
+.coffee-and-cafe h1{
+    font-size: 50px;
+}
+
+.coffee-and-cafe-left-part .row .col-12, .coffee-and-cafe-right-part .row .col-12{
+    width: 450px;
+}
+
+.coffee-and-cafe-left-part .row div:nth-of-type(3){
+    background-color: #bfa98b;
+    box-shadow: 0px 0px 10px rgba(51, 47, 41, 0.5);
+    border-radius: 15px;
+}
+
+.coffee-and-cafe-right-part .row div:nth-of-type(1){
+    background-color: #bfa98b;
+    box-shadow: 0px 0px 10px rgba(51, 47, 41, 0.5);
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .coffee-and-cafe-left-part, .coffee-and-cafe-right-part{
+        width: fit-content;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .coffee-and-cafe-left-part, .coffee-and-cafe-right-part{
+        width: fit-content;
+        margin-left: 8%;
+    }
+}
+
+
+
+
+/* about shop quality */
+.about-shop-quality{
+    padding-bottom: 200px;
+    position: relative;
+}
+
+.about-shop{
+    min-height: 580px;
+    width: 100%;
+    background-image: url(image/fgfggfgf-min.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 500px;
+}
+
+.card-container .card-row{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.Qlty-card{
+    max-width: 270px;
+    background-color: #fff;
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(51, 47, 41, 0.5);
+}
+
+.Qlty-card h1{
+    color: #bfa98b;
+}
+
+@media only screen and (max-width: 1120px){
+    .about-shop-quality{
+        padding-bottom: 450px;
+    }
+}
+
+@media only screen and (max-width: 547px){
+    .about-shop-quality{
+        padding-bottom: 900px;
+    }
+}
+
+
+
+/* refreshing items option */
+.popular-dishes {
+    background-color: #bfa98b;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.popular-dishes h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.popular-dishes .row .col-12{
+    display: flex;
+    justify-content: center;
+}
+
+.popular-dishes .card{
+ background-color: #fff;
+ border-radius: 15px;
+}
+
+.popular-dishes .card img{
+    border-radius: 5px 5px 5px 5px;
+}
+
+.popular-dishes .card-body h5{
+    text-transform: uppercase;
+    color: #bfa98b;
+}
+
+.popular-dishes .card-body a{
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    background-color: #bfa98b;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.popular-dishes .card-body a:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.popular-dishes .card-body span{
+    color: #bfa98b;
+    margin-left: 100px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+/* cake and dessert */
+.cake-and-dessert{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.cake-and-dessert h1{
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.cake-and-dessert .card{
+    overflow: hidden;
+    border-radius: 0px;
+    border: none;
+}
+.cake-and-dessert .card img{
+    border-radius: 0px;
+    transition: transform 350ms ease-in;
+}
+
+.cake-and-dessert .row .col-12{
+    display: flex;
+    justify-content: center;
+}
+
+.cake-and-dessert .card img:hover{
+    transform: scale(1.1);
+}
+
+
+/* contact */
+.contact-left{
+    background-image: url(image/contact.jpg);
+    min-height: 500px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.contact-right input, textarea{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:1024px) {
+    .contact-right input, textarea{
+        width: 400px;
+    }
+}
+
+/* footer */
+.foot{
+    height: 150px;
+    background-color: rgb(43, 41, 41);
+}
+
+/* alert */
+.alert{
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    top: 250px;
+    left: 35%;
+    display: block;
+}
+
+.alet{
+    display: none;
+}
